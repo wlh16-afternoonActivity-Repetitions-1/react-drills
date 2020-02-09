@@ -1,32 +1,109 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
-class App extends Component {
+class App extends Component{
+
   constructor(props){
-    super(props);
-
+    super(props)
 
     this.state = {
-      stuff: ["true", "false", "true", "true"]
-    };
+      devMountainProjects: ['pass', 'pass', 'incomplete', 'pass', 'fail']
+    }
   }
 
   render(){
 
-    let newStuff = this.state.stuff.map((element,index) => {
+    let devScoresToDispay = this.state.devMountainProjects.map((element,index) => {
       return <h2>{element}</h2>
     })
-    
-    
+
     return (
-    <div> 
-      {newStuff}
-    </div>
+      <div>
+        {/*this.state.devMountainProjects*/ devScoresToDispay}
+      </div>
     )
   }
 
 }
 
 export default App
+
+
+
+
+
+
+// import React, {Component} from 'react'
+
+// class App extends Component {
+
+//   constructor(props){
+//     super(props)
+
+
+//     this.state = {
+//       takeInInput: ""
+
+//     }
+//   }
+
+//   handleChange(typedValues){
+//     this.setState({takeInInput: typedValues})
+//   }
+
+//   render(){
+
+    
+
+//     return(
+//       <div>
+//         <input onChange = {e => this.handleChange(e.target.value) } />
+//         <h1>{this.state.takeInInput}</h1>
+//       </div>
+//     )
+//   }
+
+
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+// import React, {Component} from 'react';
+
+// class App extends Component {
+//   constructor(props){
+//     super(props);
+
+
+//     this.state = {
+//       stuff: ["true", "false", "true", "true"]
+//     };
+//   }
+
+//   render(){
+
+//     let newStuff = this.state.stuff.map((element,index) => {
+//       return <h2>{element}</h2>
+//     })
+    
+    
+//     return (
+//     <div> 
+//       {newStuff}
+//     </div>
+//     )
+//   }
+
+// }
+
+// export default App
 
 
 // import React, {Component} from 'react'
